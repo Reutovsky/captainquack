@@ -1,0 +1,268 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.wrapper {
+    width: 978px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        width: 700px;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        width: 340px;
+    }
+}
+
+.header {
+    background-color: #282d30;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+    .header {
+        height: 80px;
+    }
+}
+
+.img-logo {
+    width: 500px;
+}
+
+@media (max-width: 576px) {
+    .img-logo {
+        width: 300px;
+    }
+}
+
+.img-logo-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .img-logo-wrapper {
+        padding-top: 10px;
+    }
+}
+
+.tagline {
+    height: 110px;
+    font-size: 42px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-top: 60px;
+    box-sizing: border-box;
+    color: #282d30;
+}
+
+@media (max-width: 576px) {
+    .tagline {
+        height: 75px;
+        padding-top: 25px;
+    }
+}
+
+.tagline-firstletter {
+    transform: rotateX(180deg) translateY(-7px);
+    display: inline-block;
+}
+
+.form-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-top: 20px;  
+}
+
+input {
+    padding-left: 10px;
+    color: #999;
+    font-size: 12px;
+    border: 1px solid #dcdcdc;
+    outline: 0;
+    height: 40px;
+}
+
+.input-name,
+.input-year,
+.input-cost {
+    width: 305px;
+}
+
+.form-section__label {
+    font-size: 12px;
+    color: #a9a9a9;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+.input-description {
+    width: 958px;
+}
+
+.form-section__color {
+ margin-top: 10px;   
+}
+
+.form-section__label-radio {
+    font-size: 12px;
+    color: #a9a9a9;
+    line-height: 20px;
+}
+
+/* RADIO BUTTONS STYLES START */
+
+.radio-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-container input:checked ~ .checkmark-white,
+.radio-container input:checked ~ .checkmark-black,
+.radio-container input:checked ~ .checkmark-grey,
+.radio-container input:checked ~ .checkmark-red,
+.radio-container input:checked ~ .checkmark-green {
+    border: #cf3756 3px solid;
+    transform: scale(1.2);
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.checkmark-white {
+    background-color: #fff;
+    border: #dddddd 1px solid;
+}
+
+.checkmark-black {
+    background-color: #000;
+}
+
+.checkmark-grey {
+    background-color: #cbcbcc;
+}
+
+.checkmark-red {
+    background-color: #d74345;
+}
+
+.checkmark-green {
+    background-color: #88c504;
+}
+
+/* RADIO BUTTONS STYLES END */
+
+
+
+/* STATUS STYLES START */
+
+.container-status {
+    position: relative;
+    width: 306px;
+  }
+  
+  .select-status {
+    color: #999999;
+    width: 306px;
+    border: #dcdcdc 1px solid;
+    padding-left: 10px;
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    outline: 0;
+    position: relative;
+  }
+  
+  .select-status:hover {
+    cursor: pointer;
+    border-bottom: #000 2px solid;
+  }
+  
+  .select-status::after {
+    content: "";
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #333 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -2px;
+  }
+  
+  .drop-menu {
+    position: absolute;
+    border: #dcdcdc 1px solid;
+    width: 306px;
+    display: none;
+  }
+  
+  .drop-menu-visible {
+    display: block;
+  }
+  
+  .drop-menu-invisible {
+    display: none;
+  }
+  
+  .drop-button {
+    display: block;
+    padding-left: 10px;
+    border: 0;
+    line-height: 30px;
+    color: #999999;
+    font-size: 12px;
+    outline: none;
+    background-color: white;
+    width: 304px;
+    text-align: left;
+  }
+  
+  .drop-button:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* STATUS STYLES END */

@@ -4,9 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/flexboxgrid2.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
     <title>Captain Quack</title>
 </head>
 <body>
-    3
+    <header class="header">
+        <div class="wrapper">
+                <div class="img-logo-wrapper">
+                    <img class="img-logo" src="images/logo.png" alt="logo">
+                </div>
+        </div>
+    </header>
+        <div class="wrapper">
+            <div class="tagline">
+                    <div>
+                        <div class="tagline-firstletter">!</div>Ay caramba!
+                    </div>
+            </div>
+
+            <!-- Form -->
+
+            <div class="form-row">
+
+                <div class="form-section__name">
+                    <div class="form-section__label">
+                        &nbsp;
+                    </div>
+                    <div class="form-section__name-input">
+                        <input type="text" class="input-name" placeholder="Название">
+                    </div>
+                </div>
+
+                <div class="form-section__year">
+                    <div class="form-section__label">
+                        &nbsp;
+                    </div>
+                    <div class="form-section__year-input">
+                        <input type="text" class="input-year" placeholder="Год">
+                    </div>
+                </div>
+
+                <div class="form-section__cost">
+                        <div class="form-section__label">
+                            Цена
+                        </div>
+                        <div class="form-section__cost-input">
+                            <input type="text" class="input-cost" placeholder="Название">
+                        </div>
+                </div>
+
+                <div class="form-section__description">
+                        <div class="form-section__label">
+                            &nbsp;
+                        </div>
+                        <div class="form-section__description-input">
+                            <input type="text" class="input-description" placeholder="Описание">
+                        </div>
+                </div>
+
+                <div class="form-section__color">
+                        <div class="form-section__label-radio">
+                            Цвет
+                        </div>
+                        <div class="form-section__color-radio">
+                                <label class="radio-container">
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark checkmark-white"></span>
+                                </label>
+                                      
+                                <label class="radio-container">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark checkmark-black"></span>
+                                </label>
+                                      
+                                <label class="radio-container">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark checkmark-grey"></span>
+                                </label>
+                                      
+                                <label class="radio-container">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark checkmark-red"></span>
+                                </label>
+                                
+                                <label class="radio-container">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark checkmark-green"></span>
+                                </label>
+                        </div>
+                </div>
+
+                <div class="form-section__status">
+                        <div class="form-section__label">
+                            &nbsp;
+                        </div>
+                        <div class="form-section__status-input">
+                            
+                            <div class="container-status">
+                                    <button class="select-status" id="select-status">Статус</button>
+                                    <div id="drop-menu" class="drop-menu">
+                                      <button id="button1" class="drop-button">В наличии</button>
+                                      <button id="button2" class="drop-button">Ожидается</button>
+                                      <button id="button3" class="drop-button">Нет в наличии</button>
+                                    </div>
+                            </div>
+
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts/main.js"></script>
 </body>
 </html>
