@@ -11,6 +11,7 @@ $(document).ready(function(){
     
     $selectButton.on('click', function(){
       $dropmenu.toggleClass('drop-menu-visible');
+      $selectButton.toggleClass('underlined');
     });
   
     
@@ -28,6 +29,19 @@ $(document).ready(function(){
     });
     
     function hideAll(){
-      if ($dropmenu.hasClass('drop-menu-visible')) $dropmenu.removeClass('drop-menu-visible')
+      if ($dropmenu.hasClass('drop-menu-visible')) { $dropmenu.removeClass('drop-menu-visible') };
+      if ($selectButton.hasClass('underlined')) { $selectButton.removeClass('underlined'); }
     };
+
+    $(document).mouseup(function(e){
+      if (e.target != $dropmenu[0] && $dropmenu.has(e.target).length === 0) {
+        if ($dropmenu.hasClass('drop-menu-visible')) { $dropmenu.removeClass('drop-menu-visible'); }
+        if ($selectButton.hasClass('underlined')) { $selectButton.removeClass('underlined'); }
+      }
+    });
   });
+
+$(function($) {
+  $('#input-cost').mask("999 999 999", {reverse: true});
+  $('.input-year').mask("9999");
+});

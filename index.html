@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/flexboxgrid2.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
     <title>Captain Quack</title>
 </head>
 <body>
@@ -25,7 +24,7 @@
                     </div>
             </div>
 
-            <!-- Form -->
+            <!-- SEARCH FORM -->
 
             <div class="form-row">
 
@@ -52,7 +51,7 @@
                             Цена
                         </div>
                         <div class="form-section__cost-input">
-                            <input type="text" class="input-cost" placeholder="Название">
+                            <input type="text" id="input-cost" class="input-cost" placeholder="">
                         </div>
                 </div>
 
@@ -115,10 +114,235 @@
                         </div>
                 </div>
 
+                <div class="form-section__submit">
+                        <div class="form-section__label">
+                            &nbsp;
+                        </div>
+                        <div class="form-section__submit-button">
+                            <input type="submit" class="submit" value="отправить">
+                        </div>
+                </div>
+
+                
+                <!-- // SEARCH FORM -->
             </div>
+
+            <!-- STOCK SECTION  -->
+
+            <section class="stock-section">
+                    <div class="stock-section__label">
+                        Автомобили в наличии
+                    </div>
+
+                    <!-- TABLE -->
+
+                    <table class="stock-section__table" cellspacing="0" cellpadding="0">
+
+                        <!-- TABLE HEADER -->
+
+                        <thead>
+
+                            <tr class="stock-section__table-row">
+                                <td class="stock-section__table-header-name">
+                                    Название
+                                </td>
+                                <td class="stock-section__table-header-year">
+                                    Год
+                                </td>
+                                <td class="stock-section__table-header-color">
+                                    Цвет
+                                </td>
+                                <td class="stock-section__table-header-status">
+                                    Статус
+                                </td>
+                                <td class="stock-section__table-header-cost">
+                                    Цена
+                                </td>
+                                <td class="stock-section__table-header-delete">
+                                    &nbsp;
+                                </td>
+                            </tr>
+
+                        </thead>
+
+                        <!-- //TABLE HEADER -->
+
+                        <!-- TABLE BODY -->
+
+                        <tbody>
+
+                                <tr class="stock-section__table-row">
+                                        <td class="stock-section__table-header-name">
+                                            1.6MT Ambiente 85 л.с. МКПП
+                                            <span class="car-options">
+                                                + доп. опция "Радио-навигационная система Amundasen 2DIN, CD, MP3
+                                            </span>
+                                        </td>
+                                        <td class="stock-section__table-header-year">
+                                            2012
+                                        </td>
+                                        <td class="stock-section__table-header-color">
+                                            <div class="stock-section__table-header-color-radio radio-black"></div>
+                                        </td>
+                                        <td class="stock-section__table-header-status">
+                                            Ожидается
+                                        </td>
+                                        <td class="stock-section__table-header-cost">
+                                            1 689 000 руб.
+                                        </td>
+                                        <td class="stock-section__table-header-delete">
+                                            <button class="tbody-delete-button">
+                                                Удалить
+                                            </button>
+                                        </td>
+                                </tr>
+
+                                <tr class="stock-section__table-row">
+                                        <td class="stock-section__table-header-name">
+                                            1.6MT Ambiente Plus 105 л.с. МКПП
+                                        </td>
+                                        <td class="stock-section__table-header-year">
+                                            2012
+                                        </td>
+                                        <td class="stock-section__table-header-color">
+                                            <div class="stock-section__table-header-color-radio radio-white"></div>
+                                        </td>
+                                        <td class="stock-section__table-header-status">
+                                            Ожидается
+                                        </td>
+                                        <td class="stock-section__table-header-cost">
+                                            1 189 000 руб.
+                                        </td>
+                                        <td class="stock-section__table-header-delete">
+                                            <button class="tbody-delete-button">
+                                                Удалить
+                                            </button>
+                                        </td>
+                                </tr>
+
+                                <tr class="stock-section__table-row">
+                                        <td class="stock-section__table-header-name">
+                                            1.6MT Trend 105 л.с. МКПП
+                                        </td>
+                                        <td class="stock-section__table-header-year">
+                                            2012
+                                        </td>
+                                        <td class="stock-section__table-header-color">
+                                            <div class="stock-section__table-header-color-radio radio-black"></div>
+                                        </td>
+                                        <td class="stock-section__table-header-status">
+                                            В наличии
+                                        </td>
+                                        <td class="stock-section__table-header-cost">
+                                            1 459 000 руб.
+                                        </td>
+                                        <td class="stock-section__table-header-delete">
+                                            <button class="tbody-delete-button">
+                                                Удалить
+                                            </button>
+                                        </td>
+                                </tr>
+
+                                <tr class="stock-section__table-row">
+                                        <td class="stock-section__table-header-name">
+                                            1.6 PowerShift Trend Sport 105 л.с. АКПП
+                                        </td>
+                                        <td class="stock-section__table-header-year">
+                                            2012
+                                        </td>
+                                        <td class="stock-section__table-header-color">
+                                            <div class="stock-section__table-header-color-radio radio-grey"></div>
+                                        </td>
+                                        <td class="stock-section__table-header-status">
+                                            Ожидается
+                                        </td>
+                                        <td class="stock-section__table-header-cost">
+                                            1 459 000 руб.
+                                        </td>
+                                        <td class="stock-section__table-header-delete">
+                                            <button class="tbody-delete-button">
+                                                Удалить
+                                            </button>
+                                        </td>
+                                </tr>
+
+                                <tr class="stock-section__table-row">
+                                        <td class="stock-section__table-header-name">
+                                            2.0 MT Trend Sport 150 л.с. МКПП
+                                        </td>
+                                        <td class="stock-section__table-header-year">
+                                            2012
+                                        </td>
+                                        <td class="stock-section__table-header-color">
+                                            <div class="stock-section__table-header-color-radio radio-red"></div>
+                                        </td>
+                                        <td class="stock-section__table-header-status">
+                                            Ожидается
+                                        </td>
+                                        <td class="stock-section__table-header-cost">
+                                            786 000 руб.
+                                        </td>
+                                        <td class="stock-section__table-header-delete">
+                                            <button class="tbody-delete-button">
+                                                Удалить
+                                            </button>
+                                        </td>
+                                </tr>
+
+                                <tr class="stock-section__table-row">
+                                        <td class="stock-section__table-header-name">
+                                            2.0 Power Shift Trend Sport 150 л.с. АКПП
+                                            <span class="car-options">
+                                                + доп. опция "Радио-навигационная система Amundasen 2DIN, CD, MP3
+                                            </span>
+                                        </td>
+                                        <td class="stock-section__table-header-year">
+                                            2013
+                                        </td>
+                                        <td class="stock-section__table-header-color">
+                                            <div class="stock-section__table-header-color-radio radio-green"></div>
+                                        </td>
+                                        <td class="stock-section__table-header-status">
+                                            Нет в наличии
+                                        </td>
+                                        <td class="stock-section__table-header-cost">
+                                            821 000 руб.
+                                        </td>
+                                        <td class="stock-section__table-header-delete">
+                                            <button class="tbody-delete-button">
+                                                Удалить
+                                            </button>
+                                        </td>
+                                </tr>
+
+                        </tbody>
+
+                        <!-- //TABLE BODY -->
+
+                    </table>
+
+                    <!-- //TABLE -->
+            </section>
+
+            <!-- // STOCK SECTION -->
+
         </div>
 
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+                
+                    <p class="footer-copyright">&copy; CAPTAIN QUACK</p>
+                    
+                    <p class="footer-slogan">Десница тысячелетия и моллюск!</p>
+
+        </footer>
+
+        <!-- //FOOTER -->
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts/jquery.mask.js"></script>
         <script src="scripts/main.js"></script>
 </body>
 </html>
