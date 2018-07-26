@@ -266,7 +266,7 @@ input {
 
 
 
-                                /* STATUS STYLES START */
+                                /* STATUS + SUBMIT STYLES START */
 
 .container-status {
     position: relative;
@@ -396,7 +396,7 @@ input {
       border-bottom: #000 2px solid !important;
   }
 
-                                        /* STATUS STYLES END */
+                                        /* STATUS + SUBMIT STYLES END */
 
   @media (max-width: 768px) {
       .form-section__submit {
@@ -454,7 +454,27 @@ input {
                                     /* FORM ELEMENTS ORDER END */
 
 
-                                    /* STOCK SECTION START */
+                                    /* STOCK SECTION WRAPPERS HEADER START */
+
+.wrapper-stock {
+    width: 978px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 992px) {
+    .wrapper-stock {
+        width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper-stock {
+        width: 100%;
+    }
+}
 
 .stock-section__label {
     color: #282d30;
@@ -483,97 +503,274 @@ input {
     }
 }
 
-table {
-    border: none;
+.stock-section__header {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #c4092f;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    overflow: hidden;
-    margin-top: 30px;
-    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
-thead {
-    font-size: 15px;
-    color: white;
-    font-weight: 500;
-    background-color: #c4092f;
-    line-height: 30px;
-}
-
-.stock-section__table-header-name {
-    padding: 10px;
-    width: 469px;
-}
-
-@media (max-992px) {
-    .stock-section__table-header-name {
-        width: 270px;
-        padding: 10px;
+@media (max-width: 768px) {
+    .stock-section__header {
+        display: none;
     }
 }
 
-.stock-section__table-header-year {
+.stock-section__header > div {
+    padding: 0 0 0 15px;
+}
+
+.stock-section__header-name {
+    width: 469px;
+}
+
+@media (max-width: 992px) {
+    .stock-section__header-name {
+        width: 270px;
+    }
+}
+
+.stock-section__header-year {
     width: 60px;
 }
 
-@media (max-992px) {
-    .stock-section__table-header-year {
+@media (max-width: 992px) {
+    .stock-section__header-year {
         width: 50px;
     }
 }
 
-.stock-section__table-header-color {
+.stock-section__header-color {
     width: 60px;
 }
 
-@media (max-992px) {
-    .stock-section__table-header-color {
-        width: 45px;
+@media (max-width: 992px) {
+    .stock-section__header-color {
+        width: 50px;
     }
 }
 
-.stock-section__table-header-status {
-    width: 150px;
+.stock-section__header-status {
+    width: 125px;
 }
 
-@media (max-992px) {
-    .stock-section__table-header-status {
-        width: 105px;
+@media (max-width: 992px) {
+    .stock-section__header-status {
+        width: 120px;
     }
 }
 
-.stock-section__table-header-cost {
-    width: 150px;
+.stock-section__header-cost {
+    width: 125px;
 }
 
-@media (max-992px) {
-    .stock-section__table-header-cost {
-        width: 150px;
+@media (max-width: 992px) {
+    .stock-section__header-cost {
+        width: 120px;
     }
 }
 
-.stock-section__table-header-delete {
-    width: 65px;
+.stock-section__header-delete {
+    width: 119px;
 }
 
-@media (max-992px) {
-    .stock-section__table-header-delete {
-        width: 100px;
+@media (max-width: 992px) {
+    .stock-section__header-delete {
+        width: 90px;
     }
 }
 
-tbody > tr {
-    background: #f5f6f6;
+.stock-section__wrapper-background {
+    background: #fff;
+}
+
+@media (max-width: 768px) {
+    .stock-section__wrapper-background {
+        background: #f5f6f6;
+        border-top: #e3e4e4 1px solid;
+        margin-top: 55px;
+    }
+}
+                                /* STOCK SECTION RESULTS */
+
+.stock-section__results {
     font-size: 15px;
     font-weight: 300;
     color: #323232;
+    background: #f5f6f6;
 }
 
-tbody > .stock-section__table-row {
-    line-height: 20px;
+@media (max-width: 768px) {
+    .stock-section__results {
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+    }
 }
 
-.tbody-delete-button {
+.stock-section__results-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    line-height: 45px;
+    border-bottom: #e6e9ea 1px solid;
+}
+
+.stock-section__results-row:last-child {
+    border: 0;
+}
+
+.stock-section__results-row > div {
+    padding: 0 0 0 15px;
+}
+
+@media (max-width: 768px) {
+    .stock-section__results-row > div {
+        padding: 0 0 0 10px;
+        margin: 5px 0 5px 0;
+    }
+}
+
+.stock-section__results-name {
+    width: 469px;
+}
+
+@media (max-width: 992px) {
+    .stock-section__results-name {
+        width: 270px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+.stock-section__results-year {
+    width: 60px;
+}
+
+@media (max-width: 992px) {
+    .stock-section__results-year {
+        width: 50px;
+    }
+}
+
+.stock-section__results-color {
+    width: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-top: 10px !important;
+}
+
+@media (max-width: 992px) {
+    .stock-section__results-color {
+        width: 50px;
+    }
+}
+
+.stock-section__results-status {
+    width: 125px;
+}
+
+@media (max-width: 992px) {
+    .stock-section__results-status {
+        width: 120px;
+    }
+}
+
+.stock-section__results-cost {
+    width: 125px;
+}
+
+@media (max-width: 992px) {
+    .stock-section__results-cost {
+        width: 120px;
+    }
+}
+
+.stock-section__results-delete {
+    width: 119px;
+}
+
+@media (max-width: 992px) {
+    .stock-section__results-delete {
+        width: 85px;
+        padding: 0 !important;
+    }
+}
+
+.stock-section__results-additional {
+    width: 958px;
+    font-size: 13px;
+    color: #939c9e;
+    padding: 0 0 10px 15px !important;
+    line-height: 10px;
+}
+
+@media (max-width: 992px) {
+    .stock-section__results-additional {
+        width: 270px;
+        line-height: 15px;
+    }
+}
+
+                        /* MOBILE SCREEN STOCK  */
+
+@media (max-width: 768px) {
+    .stock-section__results-name {
+        width: 170px;
+        order: 1;
+        white-space: normal;
+        line-height: 16px;
+        padding-top: 10px !important;
+    }
+
+    .stock-section__results-color {
+        width: 50px;
+        order: 2;
+    }
+
+    .stock-section__results-cost {
+        width: 120px;
+        order: 3;
+    }
+
+    .stock-section__results-additional {
+        width: 340px;
+        order: 4;
+        font-size: 13px;
+    }
+
+    .stock-section__results-year {
+        width: 50px;
+        order: 5;
+    }
+
+    .stock-section__results-status {
+        width: 200px;
+        order: 6;
+    }
+
+    .stock-section__results-delete {
+        width: 90px;
+        order: 7;
+    }
+}
+
+                        /* MOBILE SCREEN STOCK END */
+
+.delete-button {
     border: 0;
     background-color: #f5f6f6;
     font-size: 14px;
@@ -584,25 +781,18 @@ tbody > .stock-section__table-row {
     height: 30px;
 }
 
-.tbody-delete-button:hover {
+.delete-button:hover {
     cursor: pointer;
     background: #282d30;
     color: white;
     border-radius: 20px;
 }
 
-.car-options {
-    display: block;
-    font-size: 13px;
-    color: #abb1b3;
-}
-
-.stock-section__table-header-color-radio {
+.radio {
     width: 20px;
     height: 20px;
+    border: 0;
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .radio-black { background: #000; }
@@ -610,6 +800,11 @@ tbody > .stock-section__table-row {
 .radio-grey  { background: #cbcbcc; }
 .radio-green { background: #88c504; }
 .radio-red   { background: #d74345; }
+
+
+                        /* STOCK SECTION RESULTS END */
+
+
 
                                 /* FOOTER START */
 
@@ -630,6 +825,12 @@ tbody > .stock-section__table-row {
 @media (max-width: 992px) {
     .footer {
         margin-top: 425px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 0;
     }
 }
 
